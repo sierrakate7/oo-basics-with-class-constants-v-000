@@ -1,4 +1,5 @@
 lass Book
+class Book
   attr_accessor :author, :page_count
   attr_reader :title, :genre
 
@@ -12,11 +13,10 @@ lass Book
     puts "Flipping the page...wow, you read fast!"
   end
 
+  # creates the writer for genre and adds the logic for the class constant
   def genre=(genre)
     @genre = genre
     GENRES << genre
-    #or GENRES = @genre
   end
-end
 end
  
